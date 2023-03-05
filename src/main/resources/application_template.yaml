@@ -1,0 +1,23 @@
+minio:
+  endpoint: http://endpoint:port
+  accessKey: fileow
+  secretKey: fileow
+  bucket: fileow
+spring:
+  datasource:
+    url: jdbc:mysql://host:port/fileow
+    username: fileow
+    password: fileow
+  jpa:
+    hibernate:
+      ddl-auto: update
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 2048MB
+      max-request-size: 2048MB
+server:
+  port: 8001
